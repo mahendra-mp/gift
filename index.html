@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Birthday Gift Question</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<!-- PAGE 1 -->
+
+<div id="page1" class="page active">
+
+<h1>Can I give you a small birthday gift? 🎁</h1>
+
+<h2>Dry Fruit Mix 🌰</h2>
+
+<div class="buttons">
+
+<button class="yes" onclick="nextPage(2)">Yes</button>
+
+<button class="no" onclick="noMessage(2,'Its okay… lets try another one 😊')">No</button>
+
+</div>
+
+</div>
+
+
+<!-- PAGE 2 -->
+
+<div id="page2" class="page">
+
+<h2>Maybe this one? 🍫</h2>
+
+<h1>Big Cadbury Chocolate</h1>
+
+<div class="buttons">
+
+<button class="yes" onclick="nextPage(3)">Yes</button>
+
+<button class="no" onclick="noMessage(3,'Uff okay… lets try another one 😅')">No</button>
+
+</div>
+
+</div>
+
+
+<!-- PAGE 3 -->
+
+<div id="page3" class="page">
+
+<h2>Last option 😌</h2>
+
+<h1>Teddy Bear 🧸</h1>
+
+<div class="buttons">
+
+<button id="yesBtn" class="yes" onclick="showFinal()">Yes</button>
+
+<button id="noBtn" class="no" onclick="resizeButtons()">No</button>
+
+</div>
+
+</div>
+
+
+<!-- FINAL PAGE -->
+
+<div id="finalPage" class="page">
+
+<h1>💐</h1>
+
+<h2>Okay… maybe not these gifts.</h2>
+
+<p id="typing"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
